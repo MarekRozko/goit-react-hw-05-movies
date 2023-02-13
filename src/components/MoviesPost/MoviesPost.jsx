@@ -5,7 +5,7 @@ export const MoviePost = ({ poster_path, title, id}) => {
     <div>
       <img
         src={
-              poster_path === null
+              poster_path === undefined
                 ? 'https://klike.net/uploads/posts/2022-09/1662373395_b-1.jpg'
                 : `https://image.tmdb.org/t/p/w500${poster_path}`
             }
