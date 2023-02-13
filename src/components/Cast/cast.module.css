@@ -1,0 +1,24 @@
+.actorItem{
+    list-style: none;
+    border-radius: 5px;
+    border: 2px solid grey;
+    width: 220px;
+    padding: 0;
+}
+.actorList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    column-gap: 16px;
+    row-gap: 32px;
+    margin-top: 50px;
+    
+}
+.actorCharacter{
+    margin-bottom: 0;
+    padding-left: 8px;
+}
+.actorName{
+    padding-left: 8px;
+}

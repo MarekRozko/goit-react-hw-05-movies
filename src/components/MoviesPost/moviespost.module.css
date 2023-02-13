@@ -1,0 +1,10 @@
+.text{
+    font-size: 20px;
+    line-height: 1.09;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 300px;
+    margin: 0;
+    font-weight: 600;
+    padding: 10px;
+}

@@ -1,0 +1,14 @@
+.itemReviews{
+    list-style: none;
+    border: 2px solid grey;
+    border-radius: 5px;
+    width: 920px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.contentReviews{
+    font-size: 18px;
+    width: 920px;
+ 
+
+}

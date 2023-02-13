@@ -1,0 +1,15 @@
+
+
+.SearchInput {
+    width: 300px;
+    font-size: 18px;
+    margin-left: 5px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+.searchLink{
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    color: black;
+}
