@@ -1,6 +1,6 @@
 import { fetchFilmToId } from 'components/Api/Api';
 import { useState, useEffect } from 'react';
-import { useParams, useLocation, Link, Outlet, } from 'react-router-dom';
+import { useParams, useLocation, Link, Outlet} from 'react-router-dom';
 import Loader from 'components/Loader/Loader';
 import styles from "./detailsMovies.module.css";
 
@@ -33,19 +33,21 @@ const DetailsMovies = () => {
   const { title, poster_path, overview, genres, vote_average } = movies;
 const ganresList = genres?.map(ganre => ganre.name).join(', ');
 
-const goBackHome = location.state?.from ?? '/';
+const goBackHome = location.state?.from || '/';;
   return (
     <div>
-        <Link to={goBackHome} className={styles.backLink}>Go back</Link>
+       <Link to={goBackHome} className={styles.backLink}>Go back</Link>
         <div className={styles.postContainer}>
             {loading && <Loader />} 
             {error && <p>{error.massage}</p>}      
-            <img
-                src={`https://image.tmdb.org/t/p/w400${poster_path}`}
-                alt=""
+            <div>
+               <img
+                src={`https://image.tmdb.org/t/p/w500${poster_path}`}
+                alt="Poster"
                 width="240"
                 className={styles.postMovie}
-            />
+            />   
+            </div>
             <div className={styles.textContainer}>
                 <h3 className={styles.title}>{title}</h3>
                 <h3>Rating {vote_average}</h3>

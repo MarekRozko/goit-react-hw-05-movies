@@ -1,15 +1,35 @@
 
 
-.SearchInput {
-    width: 300px;
-    font-size: 18px;
-    margin-left: 5px;
-    border-radius: 4px;
-    font-weight: 500;
+
+.btnSearch{
+    font-size: 16px;
+    background-color: blueviolet;
+    border-radius: 5px;
+    color: aliceblue;
 }
-.searchLink{
+.inputSearch{
+    width: 300px;
+    margin-left: 50px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+.linkSearch{
     text-decoration: none;
-    display: block;
-    padding: 5px;
     color: black;
+}
+.itemSearch{
+        text-decoration: none;
+        color: grey;
+        border: 2px solid grey;
+        border-radius: 5px;
+        list-style: none;
+}
+.gallerySearch{
+        display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+            column-gap: 16px;
+            row-gap: 32px;
+            padding: 10px 32px 60px 32px;
 }
