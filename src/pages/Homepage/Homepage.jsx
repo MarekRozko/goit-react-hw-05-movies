@@ -27,10 +27,9 @@ const  Homepage = () => {
 
     const elements = trendingMovies.map(movie => (
         
-        <li className={styles.imagesLink}>
+        <li className={styles.imagesLink} key={movie.id}>
            <Link
             to={`/movies/${movie.id}`}
-            key={movie.id}
             state={{ from: location }}
             className={styles.Link}
 
@@ -46,7 +45,7 @@ const  Homepage = () => {
         {loading && <Loader />}
         {error && <p>{error.massage}</p>} 
         <h1 className={styles.title}>Trending Movies</h1> 
-        <ul className={styles.gallery}>{elements}</ul>
+        <ul className={styles.gallery}>{elements} </ul>
     </div>
   );
 }
