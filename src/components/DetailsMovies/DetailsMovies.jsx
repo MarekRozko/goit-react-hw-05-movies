@@ -10,7 +10,7 @@ const DetailsMovies = () => {
     const [error, setError] = useState(null);
     const { movieId } = useParams();
     const location = useLocation();
-
+    const from = location.state?.from || '/';
 
   
 
@@ -66,10 +66,10 @@ const goBackHome = location.state?.from || '/';;
             </div>   
           </div>
         <p className={styles.inform}>Additional information:</p>
-            <Link  to={`/movies/${movieId}/cast`} className={styles.cast}>
+            <Link state={{ from }} to={`cast`} className={styles.cast}>
             Cast
           </Link>
-      <Link to="reviews" className={styles.reviews}>Reviews</Link>
+      <Link  state={{ from }} to={`reviews`} className={styles.reviews}>Reviews</Link>
       <Outlet />
     </div>
   );
